@@ -90,8 +90,8 @@ def main():
     output_path = input_path.with_suffix(".srt")
 
     # Default = no correction
-    timing_correction = 0.996 #0.995
-
+    timing_correction = 0.9955 
+    
     if len(sys.argv) >= 3:
         try:
             timing_correction = float(sys.argv[2])
@@ -113,3 +113,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
